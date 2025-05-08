@@ -8,14 +8,18 @@ const conquer = (arr, first, mid, last) => {
             temp[k++] = arr[j++];
         }
     }
+
     while (i <= mid) {
         temp[k++] = arr[i++];
     }
+
     while (j <= last) {
         temp[k++] = arr[j++];
     }
+
     let p = first;
     let t = 0;
+    
     while (t < temp.length) {
         arr[p++] = temp[t++];
     }

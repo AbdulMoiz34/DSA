@@ -106,7 +106,7 @@
 // console.log(arr);
 
 // rotate elements from left 1
-// const arr = [2, 3, 4, 5, 5];
+// const arr = [1, 2, 3, 4, 5];
 
 // let temp = arr[0];
 
@@ -116,4 +116,49 @@
 
 // arr[arr.length - 1] = temp;
 
+// console.log(arr);
+
+
+// Right rotation (1)
+// const arr = [1, 2, 3, 4, 5];
+// const copy = arr[arr.length - 1];
+
+// for (let i = arr.length - 1; i > 0; i--) {
+//     arr[i] = arr[i - 1];
+// }
+
+// arr[0] = copy;
+// console.log(arr);
+
+// left rotation (k)
+// const arr = [1, 2, 3, 4, 5];
+// const k = 1
+
+// const temp = new Array(arr.length);
+
+// for (let i = arr.length - 1; i >= 0; i--) {
+//     temp[i] = arr[(i + k) % arr.length];
+// }
+
+// console.log(temp);
+
+
+// const arr = [1, 2, 3, 4, 5];
+// let k = 2;
+
+// k = k % arr.length;
+
+// const reverse = (i, j) => {
+//     while (i <= j) {
+//         let temp = arr[i];
+//         arr[i] = arr[j];
+//         arr[j] = temp;
+//         i++;
+//         j--
+//     }
+// }
+
+// reverse(0, k - 1);
+// reverse(k, arr.length - 1);
+// reverse(0, arr.length - 1);
 // console.log(arr);
